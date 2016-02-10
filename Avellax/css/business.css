@@ -1,0 +1,25 @@
+#cap1{
+	background-image: url(../img/carousel/cerro.png);
+	background-color: #222;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%
+}
+#cap2{
+	background-image: url(../img/carousel/pareja.png);	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%
+}
+#cap3{
+	background-image: url(../img/carousel/niña.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%
+}
+#myCarousel{
+	height: 100%
+}
+.carousel-caption{
+	margin-bottom: 40px;
+}
