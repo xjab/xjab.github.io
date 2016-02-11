@@ -5,7 +5,8 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -34,9 +35,11 @@
     <![endif]-->
 
 </head>
+
 <?php
     require('connect.php');
 ?>
+
 <body id="page-top" class="index">
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -623,10 +626,6 @@
         </div>
     </div>
 
-    <?php
-        mysql_close($link);
-    ?>
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -646,5 +645,9 @@
     <script src="js/agency.js"></script>
 
 </body>
+
+<?php
+    mysql_close($link);
+?>
 
 </html>
