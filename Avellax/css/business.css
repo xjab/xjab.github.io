@@ -23,3 +23,9 @@
 .carousel-caption{
 	margin-bottom: 40px;
 }
+.navbar-default{
+	background-color: #222;
+}
+.timeline > li .timeline-image{
+	background-color: #333764;
+}
