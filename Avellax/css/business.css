@@ -1,3 +1,9 @@
+white{
+	color: white;
+}
+tamez{
+	color: #ef5830;
+}
 #cap1{
 	background-image: url(../img/carousel/cerro.png);
 	background-color: #222;
@@ -28,4 +34,7 @@
 }
 .timeline > li .timeline-image{
 	background-color: #333764;
+}
+.navbar-default .navbar-brand{
+	text-transform: uppercase;	
 }

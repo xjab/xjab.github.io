@@ -52,7 +52,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Teresa Tamez Photography</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><tamez>Teresa Tamez</tamez><white>Photography</white></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -364,7 +364,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                    <span class="copyright">Copyright &copy; xJAB 2016</span>
                 </div>
                 <div class="col-md-4">
                 </div>
@@ -374,7 +374,11 @@
                         </li>
                         <li><a href="#"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a>
                         </li>
                     </ul>
                 </div>
