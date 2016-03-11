@@ -13,15 +13,15 @@
     <title>Teresa Tamez Photography</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/agency.css" rel="stylesheet">
-    <link href="css/half-slider.css" rel="stylesheet">
-    <link href="css/business.css" rel="stylesheet">
+    <link href="../css/agency.css" rel="stylesheet">
+    <link href="../css/half-slider.css" rel="stylesheet">
+    <link href="../css/business.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -37,7 +37,7 @@
 </head>
 
 <?php
-    require('connect.php');
+    require('../connect.php');
 ?>
 
 <body id="page-top" class="index">
@@ -52,7 +52,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><tamez class="pantone">Teresa Tamez</tamez><white>Photography</white></a>
+                <a class="navbar-brand page-scroll" href="../index.php"><tamez class="pantone">Teresa Tamez</tamez><white>Photography</white></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -62,28 +62,28 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class='page-scroll' href='pages/bodas.php'>Bodas</a>
+                        <a class='page-scroll' href='bodas.php'>Bodas</a>
                     </li>
                     <li>
-                        <a class='page-scroll' href='pages/quinces.php'>Quinceañeras</a>
+                        <a class='page-scroll' href='quinces.php'>Quinceañeras</a>
                     </li>
                     <li>
                         <?php
                             $query = "SELECT * FROM titles WHERE id = 2";
                             $result = mysql_query($query, $link);
                             $row = mysql_fetch_assoc($result);
-                            echo "<a class='page-scroll' href='pages/retrato.php'>" . $row['title'] . "</a>";
+                            echo "<a class='page-scroll' href='retrato.php'>" . $row['title'] . "</a>";
                         ?>
                     </li>
                     <li>
-                        <a class='page-scroll' href='pages/eventos.php'>Eventos</a>
+                        <a class='page-scroll' href='eventos.php'>Eventos</a>
                     </li>
                     <li>
                         <?php
                             $query = "SELECT * FROM titles WHERE id = 3";
                             $result = mysql_query($query, $link);
                             $row = mysql_fetch_assoc($result);
-                            echo "<a class='page-scroll' href='pages/cursos.php'>" . $row['title'] . "</a>";
+                            echo "<a class='page-scroll' href='cursos.php'>" . $row['title'] . "</a>";
                         ?>
                     </li>
                     <li>
@@ -91,7 +91,7 @@
                             $query = "SELECT * FROM titles WHERE id = 4";
                             $result = mysql_query($query, $link);
                             $row = mysql_fetch_assoc($result);
-                            echo "<a class='page-scroll' href='pages/contacto.php'>" . $row['title'] . "</a>";
+                            echo "<a class='page-scroll' href='contacto.php'>" . $row['title'] . "</a>";
                         ?>
                     </li>
                 </ul>
@@ -100,50 +100,7 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-    <!-- Header -->
-    <!-- Half Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div id="cap1" class="fill"></div>
-                <div class="carousel-caption">
-                    <a href="pages/contacto.php" class="page-scroll btn btn-xl">Contáctanos</a>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div id="cap2" class="fill"></div>
-                <div class="carousel-caption">
-                    <a href="pages/contacto.php" class="page-scroll btn btn-xl">Contáctanos</a>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div id="cap3" class="fill"></div>
-                <div class="carousel-caption">
-                    <a href="pages/contacto.php" class="page-scroll btn btn-xl">Contáctanos</a>
-                </div>
-            </div>
-        </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-
-    </header>
+    
     <!--<header>
         <div class="container">
             <div class="intro-text">
@@ -153,6 +110,54 @@
             </div>
         </div>
     </header>-->
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <?php
+                        $query = "SELECT * FROM titles WHERE id = 2";
+                        $result = mysql_query($query, $link);
+                        $row = mysql_fetch_assoc($result);
+                        echo "<h2 id='ache-dos' class='section-heading pantone'>" . $row['title'] . "</h2>";
+                    ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="../img/retrato/uno.png" class="img-responsive img-circle" alt="">
+                        <h4>Lorem ipsum</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                        <p>
+                            Aliquam ut hendrerit nisi. Phasellus scelerisque nunc tortor, ut dapibus arcu sodales sit amet. Suspendisse tempus arcu sed risus congue, a aliquam justo mattis. Ut lacinia consectetur sem in pulvinar. Nulla eget efficitur turpis, eu fringilla felis. Nunc nec risus quis arcu sagittis semper eget at diam. Aliquam at pulvinar elit. Sed pulvinar nibh maximus urna viverra cursus. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="../img/retrato/dos.png" class="img-responsive img-circle" alt="">
+                        <h4>Lorem ipsum</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                        <p>
+                            Aliquam ut hendrerit nisi. Phasellus scelerisque nunc tortor, ut dapibus arcu sodales sit amet. Suspendisse tempus arcu sed risus congue, a aliquam justo mattis. Ut lacinia consectetur sem in pulvinar. Nulla eget efficitur turpis, eu fringilla felis. Nunc nec risus quis arcu sagittis semper eget at diam. Aliquam at pulvinar elit. Sed pulvinar nibh maximus urna viverra cursus. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="../img/retrato/tres.png" class="img-responsive img-circle" alt="">
+                        <h4>Lorem ipsum</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                        <p>
+                            Aliquam ut hendrerit nisi. Phasellus scelerisque nunc tortor, ut dapibus arcu sodales sit amet. Suspendisse tempus arcu sed risus congue, a aliquam justo mattis. Ut lacinia consectetur sem in pulvinar. Nulla eget efficitur turpis, eu fringilla felis. Nunc nec risus quis arcu sagittis semper eget at diam. Aliquam at pulvinar elit. Sed pulvinar nibh maximus urna viverra cursus. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
@@ -180,22 +185,22 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="../js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="../js/classie.js"></script>
+    <script src="../js/cbpAnimatedHeader.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="../js/jqBootstrapValidation.js"></script>
+    <script src="../js/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/agency.js"></script>
+    <script src="../js/agency.js"></script>
 
 </body>
 

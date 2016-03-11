@@ -1,8 +1,16 @@
+body{
+	font-family: Arial, Helvetica, serif;
+	color: #000;
+}
+p, strong{
+	color: #000;
+}
 white{
 	color: white;
+	font-family: "Times New Roman", Times, Serif;
 }
 tamez{
-	color: #ef5830;
+	font-family: "Times New Roman", Times, Serif;
 }
 #cap1{
 	background-image: url(../img/carousel/cerro.png);
@@ -30,11 +38,23 @@ tamez{
 	margin-bottom: 40px;
 }
 .navbar-default{
-	background-color: #222;
+	background-color: #000;
 }
 .timeline > li .timeline-image{
 	background-color: #333764;
 }
 .navbar-default .navbar-brand{
 	text-transform: uppercase;	
+}
+.pantone{
+	color: #fa4616;
+}
+#ache-dos{
+	padding-bottom: 25px;
+}
+#ache-tres{
+	color: white;
+}
+#tel{
+	font-size: 15px;
 }
